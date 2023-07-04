@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Quattrocento', serif;
+    scroll-behavior: smooth;
+    
+   }
+   body{
+    height: 100vh;
+   
+   }
+   .navigation
+   {
+       display: flex;
+       flex-direction: row;
+       justify-content: space-between;
+       background-color: black;
+       color: white; 
+       padding: 1rem;
+       align-items: center;
+       position: sticky;
+       top:0;
+       z-index: 1000;
+   }
+   .link{
+       width: 70%;
+       display: flex;
+       justify-content: space-evenly;
+   }
+   .left{
+       width: 20%;
+   }
+   .right{
+       width: 10%;
+       display: flex;
+       justify-content: space-between;
+   }
+   .navigation .link a{
+       text-decoration: none;
+       color: white;
+       font-weight: 700;
+       text-transform: uppercase;
+   }
+   .hero-image{
+    background-image: url("./resourses/pizza1.png");
+    height: 100vh;
+    width: 100%;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:white;
+  }
+  .color-overlay{
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  .hero-details{
+    padding-top: 8vw;
+    padding-left: 10VW;
+  }
+  .hero-text h1{
+    text-align: start;
+    width: 40vw;
+    font-size: 5vw;
+  }
+.bar{
+    background-color: #F24C4C;
+    width: 25%;
+    height: 1vh;
+    margin: 30px 0px 40px 00px;
+}
+.main-text{
+    text-align: left;
+    width: 30vw;
+}
+.head{
+    padding-top: 15vh;
+    text-align: center;
+    margin: auto;
+    width: 20vw;
+}
+.head-bar{
+    background-color: #F24C4C; 
+    width: 100%;
+    height: 1vh;
+    margin: 30px 0px 40px 00px;
+}
+.about-details{
+    display: flex;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-bottom: 5vw;
+    justify-content: center;
+    gap: 20px;
+}
+.section-bar{
+    width: 80%;
+    height: 0.5%;
+    margin-bottom: 20px;
+}
+.about-details p{
+    text-align: center;
+    word-wrap: normal;
+    text-align: left;
+}
+.about-details img{
+    height: 30%;
+    width: 40%;
+}
+#aboutus{
+    background-color: black;
+    color:white; 
+}
+#menu{
+    background-color: black;
+    color:white; 
+}
+.menu-text{
+    padding-left: 6vw;
+    padding-right: 6vw;
+}
+.menu{
+    padding: 6vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5vw;
+}
+.items{
+    display: flex;
+    justify-content: space-between;
+    word-wrap: break-word;
+    gap: 2vw;
+    text-align: left;
+}
+.item-text{
+    padding-top: 1vw;
+}
+.item-text h3{
+    color: yellow;
+
+}
+.carousel{
+    width: 60%;
+    height: 100%;
+    box-shadow: 0px 0px 3px grey;
+    margin-top: 100px;
+    margin: auto;
+    margin-bottom: 100px;
+}
+#carousel{
+    background-color: black;
+    color:white; 
+}
+.gallery-image img {
+    width: 170px;
+    margin-bottom: 7px;
+    margin-right: 100px;
+}
+.map-section{
+    text-align: left;
+    display: flex;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-bottom: 10vw;
+    justify-content: space-between;
+}
+.map-section img{
+    width: 100%;
+    height: 100%;
+}
+
+#testimony{
+    background-color: black;
+    color:white; 
+}
+.map p{
+    color:white;
+    text-align: justify;}
+    
+    .map{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 5rem;
+        width: 80%;
+        margin: 0 auto;
+        
+    }
+    iframe{
+        height: 100%;
+    width: 100%;}
+    .copywrite{
+        display: flex;
+        width: 80%;
+        justify-content: space-between;
+        flex-direction: row;
+        color:white;
+        margin: 0 auto;
+    }
+    .bottom{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .findus{
+        
+    }
+
+   @media only screen and (max-width: 768px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .navigation{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+      
+        
+    }
+    .descriptionaboutus{
+        padding: 2rem;
+        display: grid;
+        grid-template-columns: 1fr ;
+        column-gap: 2rem;
+        margin: 0 auto;
+    }
+    .left{
+        display: flex;
+        width: 100%;
+        height: 30%;
+    }
+    .link{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 100%;
+        margin:  0 auto;
+        
+
+    }
+    
+    .right{
+        display: none;
+    }
+    .link a{
+        margin:  auto;
+    }
+    .hero-details{
+        padding-top: 30vw;
+        width: 100%;
+        padding-right: 10vw;
+      }
+      .hero-details h1{
+        font-size: 7vw;
+      }
+      .main-text{
+        width: 100%;
+        text-align: center !important;
+      }
+      .bar{
+        width: 100%;
+      }
+      .hero-text h1{
+        width: 100%;
+        text-align: center;
+      }
+    .about-details{
+        flex-direction: column-reverse;
+
+    }
+    .about-details>img{
+        width: 100vw;
+    }
+    .menu{
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+    .map-section {
+        flex-direction: column-reverse;
+    }
+    .gallery{
+        margin-left: 8px !important;
+    }
+    .gallery-2{
+        justify-content: center !important;
+        text-align: center !important;
+        width: 120% !important;
+        margin-right: 0 !important;
+    }
+    .gallery-3{
+        width: 100% !important;
+    }
+    .items img{
+        width: 50vw;
+    }
+    .copywrite{
+        display: flex;
+        width: 80%;
+        justify-content: space-between;
+        flex-direction: column;
+        color:white;
+        margin: 0 auto;
+    }
+    .findus{
+        background: black;
+        height: 100vh;
+        
+    }
+    .bottom{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .map{
+        display: grid;
+        grid-template-columns: 1fr ;
+        column-gap: 5rem;
+        width: 80%;
+        margin: 0 auto;
+        
+    }
+    
+    iframe{
+    height: 150%;
+    width: 100%;}
+    .copywrite{
+        margin: 0 auto;
+        width: 50%;
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+    }
+}
